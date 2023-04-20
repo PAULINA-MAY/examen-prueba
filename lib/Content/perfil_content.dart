@@ -12,7 +12,7 @@ class PerfilContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: const Color(0xFF176BFC),
-      height: 150,
+      height: 140,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -24,7 +24,7 @@ class PerfilContent extends StatelessWidget {
                 children: [
                   Container(
                     color: Colors.transparent,
-                    height: 95,
+                    height: 90,
                     width: 235,
                     child: ListTile(
                         leading: IconButton(
@@ -51,8 +51,8 @@ class PerfilContent extends StatelessWidget {
                         )),)
                 ],
               )),
-         CircleAvatar(
-          radius: 75,
+         const CircleAvatar(
+          radius: 65,
           backgroundImage:
               AssetImage('assets/Pictures/generic-man.jpg'),
         )

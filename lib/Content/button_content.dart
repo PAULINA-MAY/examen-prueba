@@ -11,7 +11,7 @@ class ButtonContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.transparent,
-      height: 80,
+      height: 50,
       child: Center(
         child: CustomButton(
           function: () {},

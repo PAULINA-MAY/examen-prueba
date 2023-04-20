@@ -12,7 +12,7 @@ class CalendarContent extends StatelessWidget {
     return Container(
       margin: const  EdgeInsets.all(20.0),
         color: Colors.transparent,
-        height: 85,
+        height: 86,
         child: ListView.builder(
          physics: const BouncingScrollPhysics(),
          scrollDirection: Axis.horizontal,
@@ -26,7 +26,7 @@ class CalendarContent extends StatelessWidget {
               color: dayweek.color,
               child:SizedBox(
                 height: 70,
-                width: 66,
+                width: 68,
                 child: Align(
                   alignment: AlignmentDirectional.topStart,
                   child: ListTile(
