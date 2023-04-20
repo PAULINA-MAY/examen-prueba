@@ -16,6 +16,7 @@ class SecondScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
         body:SafeArea(child: SingleChildScrollView(
+          physics: const  BouncingScrollPhysics(),
           child: Column(
             children:  [
                    const PerfilContent(),

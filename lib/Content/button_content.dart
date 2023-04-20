@@ -11,12 +11,12 @@ class ButtonContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.transparent,
-      height: 50,
+      height: 80,
       child: Center(
         child: CustomButton(
           function: () {},
           horizontal: 75,
-          vertical: 15,
+          vertical: 12,
           label: 'Cerrar Sesion',
         ),
       ),

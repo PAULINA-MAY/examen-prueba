@@ -26,7 +26,7 @@ class PrincipalContent extends StatelessWidget {
                       title: Padding(
                         padding: EdgeInsets.only(bottom: 8.0),
                         child: Text('Marzo/02/2023', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize:14 ),)),
-                      subtitle: Text('6 de 10 tareas realizadas', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17 ),),
+                      subtitle: Text('6 de 10 tareas realizadas', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16 ),),
                     ),
                     ),
             ),
