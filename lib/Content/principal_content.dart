@@ -18,28 +18,29 @@ class PrincipalContent extends StatelessWidget {
         child:  Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
+            Expanded(
+              child: Container(
+                    color: Colors.transparent,
+                      width: 200,
+                      child: const ListTile(
+                      title: Padding(
+                        padding: EdgeInsets.only(bottom: 8.0),
+                        child: Text('Marzo/02/2023', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize:14 ),)),
+                      subtitle: Text('6 de 10 tareas realizadas', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17 ),),
+                    ),
+                    ),
+            ),
         
-            Container(
-                  color: Colors.transparent,
-                    width: 200,
-                    child: const ListTile(
-                    title: Padding(
-                      padding: EdgeInsets.only(bottom: 8.0),
-                      child: Text('Marzo/02/2023', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize:14 ),)),
-                    subtitle: Text('6 de 10 tareas realizadas', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17 ),),
-                  ),
-                  ),
-        
-              Expanded(
-                child: Container(
-                  width: 90,
+            
+                 Container(
+                  width: 130,
                   color: Colors.transparent,
                   child: SvgPicture.asset('assets/Images/thinking girl.svg',
                   fit: BoxFit.fill,
                   ),
                            
                 ),
-              ),
+              
               
              
           ],

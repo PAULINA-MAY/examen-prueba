@@ -3,6 +3,8 @@ import 'package:my_app_test/Content/Horizontal/porcentage_content.dart';
 import 'package:my_app_test/Content/Vertical/activities_content.dart';
 import 'package:my_app_test/Content/button_content.dart';
 import 'package:my_app_test/Content/perfil_content.dart';
+import 'package:my_app_test/widgets/Text/paragraph_editable.dart';
+import 'package:my_app_test/widgets/Text/title_editable.dart';
 
 
 class SecondScreen extends StatelessWidget {
@@ -10,39 +12,17 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  final width = MediaQuery.of(context).size.width;
-    bool isHorizontal(BuildContext context) =>
-        MediaQuery.of(context).size.width >= 500;
-    bool isVertical(BuildContext context) =>
-        MediaQuery.of(context).size.width < 500;
+
     return Scaffold(
+      backgroundColor: Colors.grey.shade200,
         body:SafeArea(child: SingleChildScrollView(
           child: Column(
             children:  [
                    const PerfilContent(),
                    const PorcentageContent(),
-                    const Align(
-                          alignment: Alignment.centerLeft,
-                          child: Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 30.0),
-                              child: Text('Fechas Agendadas', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),))),
-                       const Padding(
-                        padding: EdgeInsets.all(32),
-                        child: Text(
-                          'Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese '
-                          'Alps. Situated 1,578 meters above sea level, it is one of the '
-                          'larger Alpine Lakes. A gondola ride from Kandersteg, followed by a '
-                          'half-hour walk through pastures and pine forest, leads you to the '
-                          'lake, which warms to 20 degrees Celsius in the summer. Activities '
-                          'enjoyed here include rowing, and riding the summer toboggan run.',
-                          softWrap: true,
-                        ),
-                      ),
-                        const Align(
-                          alignment: Alignment.centerLeft,
-                          child: Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 30.0),
-                              child: Text('Fechas Agendadas',style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),))),
+                    const TitleEditable(titulo: 'Motivacion del dia',),
+                       const ParagraphText(parrafo: 'Lorem ipsum dolor sit amet consectetur adipiscing elit cum, himenaeos eros sapien congue pellentesque fames ac dignissim lacinia, nunc porttitor mus ridiculus tristique in neque. Vitae interdum metus parturient sem aliquam egestas auctor, pulvinar lacus felis dui luctus a fusce, semper accumsan gravida faucibus sapien vel. Aliquet rhoncus cubilia eros pulvinar est mi quisque, proin in egestas tristique integer cursus interdum rutrum, dapibus penatibus tempus suspendisse erat parturient.',),
+                         const  TitleEditable(titulo: 'Actividades del domingo 02 de marzo',),
                       Container(
                             color: Colors.transparent,
                             height: 250,
@@ -55,4 +35,5 @@ class SecondScreen extends StatelessWidget {
          );
   }
 }
+
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app_test/model/daysweek.dart';
+
 class CalendarContent extends StatelessWidget {
   const CalendarContent({
     super.key,
@@ -25,14 +26,18 @@ class CalendarContent extends StatelessWidget {
               color: dayweek.color,
               child:SizedBox(
                 height: 70,
-                width: 68,
-                child:  Padding(
-                  padding: const EdgeInsets.all(2.0),
+                width: 66,
+                child: Align(
+                  alignment: AlignmentDirectional.topStart,
                   child: ListTile(
-                  title: Text(dayweek.day,textAlign: TextAlign.center, style: TextStyle(color: colorList[index], fontWeight: FontWeight.bold, fontSize: 16 ),),
-                  subtitle: Text(dayweek.dayname,textAlign: TextAlign.center, style: TextStyle(color: colorList[index], fontWeight: FontWeight.bold, fontSize: 14,),),
-                              ),
-                ),)
+                    title: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(dayweek.day,textAlign: TextAlign.center, style: TextStyle(color: colorList[index], fontWeight: FontWeight.bold, fontSize: 16 ),),
+                    ),
+                    subtitle: Text(dayweek.dayname,textAlign: TextAlign.center, style: TextStyle(color: colorList[index], fontWeight: FontWeight.bold, fontSize: 14,),),
+                                ),
+                ),
+                ),
             );
           },
         ));

@@ -5,6 +5,7 @@ import 'package:my_app_test/Content/Vertical/activities_content.dart';
 import 'package:my_app_test/Content/principal_content.dart';
 import 'package:my_app_test/screens/second_screen.dart';
 import 'package:my_app_test/widgets/Button/customAlertDialog.dart';
+import 'package:my_app_test/widgets/Text/title_editable.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,8 +13,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey.shade200,
      appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.grey.shade200,
           elevation: 0,
           title: const Text(
             'Bienvenido, practicante',
@@ -38,32 +40,10 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: const [
              PrincipalContent(),
-                 Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 30.0),
-                          child: Text(
-                            'Fechas Agendadas',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16),
-                          ))),
+              TitleEditable(titulo: 'Fechas Agendadas',),
               CalendarContent(),
-                Align(
-                      alignment: Alignment.centerLeft,
-                      child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 30.0),
-                          child: Text(
-                            'Fechas Agendadas',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16),
-                          ))),
-            ActivitiesListContent() 
-
-                    
+              TitleEditable(titulo: 'Actividades del domingo 02 de marzo',),
+              ActivitiesListContent()  
           ],
         ),
       )

@@ -21,7 +21,7 @@ class PorcentageContent extends StatelessWidget {
                 alignment: Alignment.center,
                 child: ListTile(
                   title: Text(
-                    '90%',
+                    '76%',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,
@@ -42,7 +42,7 @@ class PorcentageContent extends StatelessWidget {
                 alignment: Alignment.center,
                 child: ListTile(
                   title: Text(
-                    '90%',
+                    '20%',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.black,

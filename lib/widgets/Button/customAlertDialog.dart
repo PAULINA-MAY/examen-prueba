@@ -10,7 +10,7 @@ class CustomAlertDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
        icon: SvgPicture.asset('assets/Icons/notify.svg',
-        height: 20, width: 20, color: Colors.black54),
+            height: 20, width: 20, color: Colors.black54),
         onPressed: () {
           showDialog(
             context: context,
@@ -49,7 +49,7 @@ class CustomAlertDialog extends StatelessWidget {
                                   },
                                   icon: SvgPicture.asset(
                                     'assets/Icons/Cancel.svg',
-                                    color: Colors.black45,
+                                    color: Colors.white54,
                                   ))
                             ],
                           ),
